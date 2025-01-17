@@ -1,0 +1,39 @@
+*{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  line-height: 48px;
+  font-weight: 700 ;
+  }
+.portinfo{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #fff;
+  color:#2C3E50 ;
+}
+
+button{
+  cursor: pointer;
+  background-color: #1abc9c;
+  color: #fff;
+  border: 0;
+  transition: all 0.2s ease-in;
+}
+button:hover{
+  background-color: #1abc9c;
+  color: #fff;
+
+}
+
+button:active{
+  transform: scale(0.9);
+  background-color: #1abc9c;
+  color: #fff;
+}
+button:focus{
+  outline: none;
+
+}
+input:focus{
+  outline: none;
+  box-shadow: none;
+}

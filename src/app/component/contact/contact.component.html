@@ -1,0 +1,23 @@
+
+<div class="portinfo d-flex justify-content-center align-items-center flex-column">
+
+  <app-stars [title]="'CONTACT SECTION'" [coloredbar]="'#2C3E50'"></app-stars>
+<div class="container ">
+
+  <div class="container">
+    <form class="mx-auto mt-5 p-3 w-50">
+      <label for="userName" class="position-relative top-0 " #user [hidden]="!isLabelVisible1" style="color:#1abc9c;">userName : </label>
+      <input  id="userName"  type="text" placeholder="userName" (keydown)="show('u')" (keyup)="hideLabel($event, 'u')" name="userName" class="form-control border-0 border-bottom py-3 position-relative ">
+      <label style="color:#1abc9c;"  for="userAge" class="position-relative top-0 " [hidden]="!isLabelVisible2">userAge : </label>
+      <input   id="userAge" type="text" placeholder="userAge" name="Age" (keydown)="show('a')"(keyup)="hideLabel($event, 'a')" class="form-control border-0 border-bottom py-3 position-relative ">
+      <label style="color:#1abc9c;" for="userEmail" class="position-relative top-0 " [hidden]="!isLabelVisible3">userEmail : </label>
+      <input  id="userEmail" type="text" placeholder="userEmail" name="userEmail" (keydown)="show('e')" (keyup)="hideLabel($event, 'e')" class="form-control border-0 border-bottom py-3 position-relative ">
+      <label style="color:#1abc9c;"  for="userPassword" class="position-relative top-0 " [hidden]="!isLabelVisible4">userPassword : </label>
+      <input  id="userPassword" type="text" placeholder="userPassword" name="password" (keydown)="show('p')" (keyup)="hideLabel($event, 'p')" class="form-control border-0 border-bottom py-3 position-relative ">
+      <button type="button" class="btn pt-0 pb-0 mt-4" >Send Message</button>
+    </form>
+      </div>
+</div>
+
+</div>
+

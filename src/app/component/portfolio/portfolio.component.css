@@ -1,0 +1,75 @@
+*{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  line-height: 48px;
+  font-weight: 700 ;
+  }
+.portfolioinfo{
+  padding-top: 5%;
+padding-bottom: 5%;
+background-color: #fff;
+
+}
+
+
+
+.maindiv img {
+  display: block;
+  transition: opacity 0.6s;
+
+}
+.maindiv i{
+  color: #fff;
+}
+
+.layerimg {
+  position: absolute;
+  background-color: #1abc9ce6;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.6s;
+}
+
+.maindiv:hover .layerimg {
+  opacity: 1;
+}
+
+.maindiv:hover img {
+  opacity: 0.8;
+}
+.custom-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0.2);
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.custom-modal .modal-dialog {
+  max-width: 90%;
+  pointer-events: none;
+}
+
+.custom-modal .modal-dialog img {
+  pointer-events: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+}
+
+.custom-modal .modal-content {
+  background: transparent;
+  border: none;
+}
+
+.custom-modal .modal-body {
+  padding: 0;
+}
+
+.custom-modal.show {
+  display: flex;
+}

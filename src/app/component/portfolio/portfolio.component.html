@@ -1,0 +1,74 @@
+<div class="portfolioinfo d-flex justify-content-center align-items-center flex-column">
+
+  <app-stars [title]="'APORTFOLIO COMPONENT'" [coloredbar]="'#2C3E50'"></app-stars>
+<div class="container ">
+ <div class="row g-5">
+ <div class="col-md-6 col-lg-4">
+<div class="rounded-3 maindiv overflow-hidden position-relative" (click)="openModal('/images/poert1.png')">
+  <img class="w-100 rounded-3"  src="/images/poert1.png">
+  <div class="layerimg start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+    <i class="fa-solid fa-plus" style="font-weight: 900;font-size: 6rem;" ></i>
+  </div>
+
+</div>
+ </div>
+ <div class="col-md-6 col-lg-4">
+  <div class="rounded-3 maindiv overflow-hidden position-relative" (click)="openModal('/images/port2.png')">
+    <img class="w-100 rounded-3"  src="/images/port2.png">
+    <div class="layerimg start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+      <i class="fa-solid fa-plus" style="  font-weight: 900;font-size: 6rem;"></i>
+    </div>
+
+  </div>
+   </div>
+   <div class="col-md-6 col-lg-4">
+    <div class="rounded-3 maindiv overflow-hidden position-relative"(click)="openModal('/images/port3.png')" >
+      <img class="w-100 rounded-3"  src="/images/port3.png">
+      <div class="layerimg start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-plus" style="  font-weight: 900;font-size: 6rem;"></i>
+      </div>
+
+    </div>
+     </div>
+     <div class="col-md-6 col-lg-4">
+      <div class="rounded-3 maindiv overflow-hidden position-relative" (click)="openModal('/images/poert1.png')">
+        <img class="w-100 rounded-3"  src="/images/poert1.png">
+        <div class="layerimg start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-plus" style="  font-weight: 900;font-size: 6rem;"></i>
+        </div>
+
+      </div>
+       </div>
+       <div class="col-md-6 col-lg-4">
+        <div class="rounded-3 maindiv overflow-hidden position-relative" (click)="openModal('/images/port2.png')">
+          <img class="w-100 rounded-3"  src="/images/port2.png">
+          <div class="layerimg start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-plus" style="  font-weight: 900;font-size: 6rem;"></i>
+          </div>
+
+        </div>
+         </div>
+         <div class="col-md-6 col-lg-4">
+          <div class="rounded-3 maindiv overflow-hidden position-relative" (click)="openModal('/images/port3.png')">
+            <img class="w-100 rounded-3"  src="/images/port3.png">
+            <div class="layerimg start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-plus" style="  font-weight: 900;font-size: 6rem;"></i>
+            </div>
+
+          </div>
+           </div>
+ </div>
+</div>
+
+</div>
+<div class="modal custom-modal" id="mymodal" tabindex="-1" #test (click)="closeModal()">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-body p-0 d-flex justify-content-center align-content-center">
+       <img class="rounded-3" width="50%"  #hamada>
+      </div>
+
+    </div>
+  </div>
+</div>
